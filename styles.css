@@ -1,0 +1,672 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin:0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
+  
+}
+/*------------Navbar-------------*/
+#navbar {
+  overflow: hidden;
+  z-index: 100;
+  margin: 0;
+}
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+.title-text {
+  padding-top: 15%;
+  font-size: 2rem;
+  line-height: 0.8;
+  font-family: "Oswald", sans-serif;
+}
+.multi-line-text {
+  padding-left: 5rem;
+  font-size: 1rem;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+.logo-img {
+  height: 100%;
+}
+#navbar .container-fluid {
+  height: 6.25rem;
+}
+#navbar .row,
+.log-tit {
+  height: 6.25rem;
+}
+.nav-item {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+}
+#navbar ul li a:hover {
+  color: cornflowerblue;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+/*----------Carousel-----------*/
+.carousel-img {
+  filter: blur(3px);
+  width: 100%;
+  /* margin-top: 10%; */
+}
+.carousel-control-next span,
+.carousel-control-prev span {
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+}
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  background-color: rgba(255, 255, 255, 0.076);
+  opacity: 10%;
+  transition: 0.5s;
+}
+
+/* #carousel h1 {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 27%;
+  font-weight: 600;
+  font-size: 4rem;
+  color: black;
+} */
+
+.first-slide{
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+
+}
+
+.first-slide-money{
+  font-size: 5rem;
+  font-weight: 600;
+
+}
+
+/* COUNTDOWN TIMER */
+.countdown-container{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap: wrap;
+  
+}
+.big-text{
+  font-size: 2rem;
+  font-weight: 600;
+  margin:0 0.3rem;
+  text-align: center;
+  border:2px solid none;
+  padding:5px;
+  border-radius: 50px;
+  box-shadow: 3px 4px 7px rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  color:black;
+  min-width:60px;
+  background-color: rgba(255, 255, 255, 0.312);
+  z-index: 1;
+}
+/* .countdown-container div{
+  margin:0 0.2rem;
+  text-align: center;
+  border:2px solid black;
+  padding:2px 5px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  color:black;
+  min-width:80px;
+} */
+.countdown-container span{
+  font-weight: 600;
+  font-family: "PT Sans Narrow", sans-serif;
+
+}
+
+/* .countdown-background{
+  background-color: rgba(255, 255, 255, 0.312);
+  z-index: 1;
+} */
+/* COUNTDOWN TIMER END */
+.box:hover{
+  transform: scale(1.1);
+  box-shadow: 3px 4px 7px rgba(0,0,0,0.5);
+  transition: 1s;
+  
+}
+.box-icon{
+  padding-right: 10px;
+}
+.box-text{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 600;
+  text-align: center; 
+  font-family: "Oswald", sans-serif;
+  box-sizing:border-box;
+  padding: 4% 0;
+}
+.box-small-text{
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
+  padding: 4% 0;
+}
+.img-carousel-3{
+  height: 150px;
+}
+.host-text{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 600;
+  text-align: left; 
+  font-family: "Oswald", sans-serif;
+  box-sizing:border-box;
+  padding:0;
+}
+.host-small-text{
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: left;
+  padding: 0;
+}
+/* -----------------ALL SEVICES----------- */
+.host:hover{
+  text-decoration: underline orangered 3px solid;
+  margin-top: 6px;
+  transition: 0.5s;
+}
+.host-box:hover{
+  /* background-color: rgba(241, 241, 241, 0.898); */
+  transform: scale(1.1) translateY(-13px);
+  transition: 0.5s;
+  border-radius: 25px;
+  position: relative;
+  z-index: 5;
+
+}
+
+/*-------------ABOUT-US---------*/
+#about-us .progress{
+  background: rgb(198, 197, 197);
+}
+
+table{
+  width: 100%;
+}
+
+#about-us {
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+#about-us h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: black;
+}
+#about-us p{
+  font-weight: 400;
+}
+
+
+/*-------------SERVICES-----------*/
+#services{
+  margin-top: 2%;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(images/pexels-tranmautritam-2512251.jpg);
+  background-size: cover;
+  object-fit: fill;
+}
+#services h2{
+  color: white;
+  font-family: "Oswald", sans-serif;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  font-weight: 400;
+  font-size: 2rem;
+}
+#services h2:before{
+  content: '';
+  background: white;
+  top: 5%;
+  transform: translateY(3.2rem);
+  height: 0.2rem;
+  width: 7%;
+  display: block;
+  margin: 0 auto;
+}
+#services h2:after{
+  content:'';
+  background: black;
+  display: block;
+  height: 0.6rem;
+  width: 2%;
+  transform: translateY(0.4rem);
+  margin: 0 auto;
+}
+#services .row{
+  margin: 0 15%;
+}
+#services .fas{
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 5%;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+#services .fas:hover{
+  background-color: rgba(128, 128, 128, 0.205);
+  border: none;
+  transition: .5s;
+}
+#services .fa-mobile-alt{
+  padding: 5% 8%;
+}
+#services h3{
+  padding-top: 5%;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+#services p{
+  color: white;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+#services .service-box:hover{
+  background-color: black;
+  opacity: 80%;
+  border-radius: 10%;
+  transition: 1s;
+}
+/*-----------------OUR TEAM-------------------*/
+#team .container-fluid{
+  padding: 0 10%;
+}
+#team .team-box{
+margin: auto;
+}
+.team-img{
+  position: relative;
+  padding-left: auto;
+  display: block;
+  filter: grayscale(30%) blur(1px);
+  margin:0 auto;
+  height: 80%;
+  width: 80%;
+  box-shadow: 0 0 20px 2px rgba(0,0,0,0.1);
+  border-radius: 100%;
+  background-size: contain;
+}
+.team-img:hover{
+  transform: scale(1.2) translateY(-10px);
+  z-index: 2;
+  filter:none;
+  transition:0.5s;
+}
+#team h3{
+  color: black;
+  font-family: "Oswald", sans-serif;
+}
+
+#team div .social-icons{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  bottom: 5rem;
+}
+#team .fab{
+  margin: 2px;
+  padding: 7px;
+  background: white;
+  border-radius: 100%;
+  opacity: 50%;
+}
+#team .fab:hover{
+  transform: scale(1.5);
+  opacity: 100%;
+  transition: .5s; 
+}
+#team h1{
+  padding-top: 1%;
+  padding-bottom: 3%;
+  color: black;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+#team h1:before{
+  content:'';
+  display: block;
+  background-color: black;
+  height: .2rem;
+  width: 12%;
+  margin: auto;
+  transform: translateY(4rem);
+}
+#team h1:after{
+  content: '';
+  display: block;
+  background-color: grey;
+  height: 0.7rem;
+  width: 4%;
+  margin: auto;
+  transform: translateY(-0.1rem);
+}
+/* ----------------DOMAIN BUYING---------- */
+#domain1 .container-fluid{
+  margin-top: 5%;
+  margin-bottom: 2%;
+  background: linear-gradient(rgba(0, 0, 0, 0.497),rgba(0, 0, 0, 0.497)),url(images/pexels-joão-vítor-heinrichs-50224560.jpg);
+  background-size: cover;
+}
+
+/*--------------PRICING-----------------*/
+#pricing h3{
+  padding-top: 5%;
+  padding-bottom: 2%;
+  color: white;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+#pricing h4{
+  padding-top: 1%;
+  padding-bottom: 2%;
+  color: black;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+#pricing h4:before{
+  content:'';
+  display: block;
+  background-color: black;
+  transform: translateY(4.1rem);
+  width: 35%;
+  height: .2rem;
+  margin: 0 auto;
+}
+#pricing h4:after{
+  content: '';
+  display: block;
+  background-color: grey;
+  transform: translateY(0.1rem);
+  width: 5%;
+  height: 0.6rem;
+  margin: 0 auto;
+}
+.rate-cut::after{
+  content:'';
+  display: block;
+  background-color: rgb(208, 208, 208);
+  transform: translateY(.5rem);
+  width: 20%;
+  height: .1rem;
+  margin: 0 auto;
+  position: relative;
+  right: 17%;
+  bottom: 28px;
+  
+}
+#pricing .add-to-cart-btn{
+  background-color: #333333;
+}
+#pricing .add-to-cart-btn:hover{
+  background-color: rgb(103, 103, 229);
+}
+
+#pricing .contact-btn{
+  margin: 1% auto 5% auto;
+  position: relative;
+  left: 47%;
+  border:1px solid black;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+}
+#pricing .contact-btn:hover{
+  transform: scale(2rem);
+  transition: 0.5s;
+  color: cornflowerblue; 
+}
+#pricing .tick{
+  color: green;
+}
+#pricing .cross{
+  color: red;
+}
+#pricing ul{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 10%;
+  position: initial;
+}
+#pricing ul li{
+  padding: 2% 1%;
+}
+#pricing .pricing-btn{
+  width: 100%;
+}
+#pricing .price-text{
+  background-color: rgba(0, 0, 0, 0.885);
+  color: white;
+  border-radius: 5%;
+}
+#pricing .price-box{
+  background-color: rgb(245, 245, 245);
+  padding: 5px;
+}
+#pricing h2{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: white;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+#pricing h5{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: white;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+}
+#pricing .price-box:hover{
+  /* background-color: rgba(255, 255, 255, 0); */
+  transform: scale(1) translateY(-13px);
+  transition: 0.5s;
+}
+.hide {
+  display: none;
+  cursor: pointer;
+}
+
+.hid-text:hover + .hide {
+  display: inline-block;
+  direction: ltr;
+  color: white;
+  background-color: grey;
+  padding: 10px;
+  font-size: .5rem;
+  width: 70%;
+  z-index: 1;
+  position: absolute;
+  left: 30%;
+  margin-top: 7%;
+  cursor: pointer;
+}
+.hid-text-payment:hover + .hide {
+  display: block;
+  direction: ltr;
+  color: white;
+  background-color: black;
+  padding: 50px;
+  font-size: 1rem;
+  width: 30%;
+  z-index: 1;
+  position: absolute;
+  left: 35%;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+
+
+/*-------------------TESTIMONIALS------------*/
+#testimonials{
+  margin: 0;
+}
+#testimonials h1{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: black;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+#testimonials h1:before{
+  content:'';
+  display: block;
+  background-color: black;
+  height: .2rem;
+  width: 15%;
+  margin: auto;
+  transform: translateY(4rem);
+}
+#testimonials h1:after{
+  content: '';
+  display: block;
+  background-color: grey;
+  height: 0.7rem;
+  width: 5%;
+  margin: auto;
+  transform: translateY(-0.1rem);
+}
+#testimonials p{
+  font-family: "PT Sans Narrow", sans-serif ;
+  font-size: 1.1rem;
+}
+#testimonials .testimonials-box{
+  background-color: rgb(245, 245, 245);
+  height: 30rem ;
+  border-radius: 10%;
+  padding-bottom: 3%;
+  margin:4%;
+
+}
+#testimonials .testimonials-img{
+  border-radius: 100%;
+  height: 40%;
+  padding: 3%;
+  background-color: white;
+  position: relative;
+  bottom: 12%;
+}
+#testimonials .testimonials-box:hover{
+  transform: scale(1.1) translateY(1rem);
+  transition: 0.8s;
+  box-shadow: 1px 1px 8px 8px rgba(104, 104, 104, 0.334);
+}
+#testimonials .testimonials-text{
+  position:relative;
+  bottom: 1%;
+  color: black;
+}
+.quote{
+  height: 1.5rem;
+  margin-bottom: 20px;
+}
+#testimonials h6{
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  bottom: 1%;
+  color: black;
+}
+.testimonials-name{
+  color: cornflowerblue;
+  font-size: 1.5rem;
+}
+/*-------------------CONTACT----------------*/
+#contact .container{
+  background-color: rgb(245, 245, 245);
+  margin-top: 3%;
+}
+#contact h1{
+  padding-top: 1%;
+  padding-bottom: 3%;
+  color: black;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+#contact h1:before{
+  content:'';
+  display: block;
+  background-color: black;
+  height: .2rem;
+  width: 15%;
+  margin: auto;
+  transform: translateY(4rem);
+}
+#contact h1:after{
+  content: '';
+  display: block;
+  background-color: grey;
+  height: 0.7rem;
+  width: 5%;
+  margin: auto;
+  transform: translateY(-0.1rem);
+}
+.contact-box{
+  padding-right: 2%;
+}
+#contact .submit-btn{
+  margin-top: 1rem;
+}
+#contact h2{
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  padding: 1% 0;
+}
+#contact .container-md{
+  background-color: white;
+}
+#contact .details{
+  font-family: "PT Sans Narrow", sans-serif ;
+  font-size: 1rem;
+}
+
+
+/* ------------Details-------------- */
+.link-tag{
+  color: black;
+  text-decoration: none; 
+  padding-left: 2%;
+  font-size: .8rem;
+}
+/*------------COPYRIGHT-----------------*/
+#copyright .container-fluid{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+#copyright p{
+  color: white;
+  margin-bottom: 0;
+}
+#contact .fab:hover{
+  transform: scale(3) translateY(-5px);
+  transition: 1s;
+}
+
+
+
